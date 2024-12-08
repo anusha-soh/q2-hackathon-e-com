@@ -83,22 +83,16 @@ function Hero() {
     </section>
 
        {/* Related PRODUCT */}
-
+    <div>
     <h3 className={`${interBold.className} text-[32px] p-7`}>Featured Products</h3>
     <section className='flex items-center space-y-6 justify-evenly flex-wrap w-full h-[139px]'>
     <Card imageUrl="/imgs/image.png" title='Library Stool Chair' price='20' ></Card>
     <Card imageUrl="/imgs/image1.png" title='Library Stool Chair' price='20' ></Card>
     <Card imageUrl="/imgs/image4.png" title='Library Stool Chair' price='20' ></Card>
     </section>
+    </div>
 
-        {/* Top catagories */}
 
-        <h3 className={`${interBold.className} text-[32px] p-7`}>TOP CATAGORIES</h3>
-    <section className='flex items-center space-y-6 justify-evenly flex-wrap w-full h-[139px]'>
-    <Card imageUrl="/imgs/image.png" title='Library Stool Chair' price='20' ></Card>
-    <Card imageUrl="/imgs/image1.png" title='Library Stool Chair' price='20' ></Card>
-    <Card imageUrl="/imgs/image4.png" title='Library Stool Chair' price='20' ></Card>
-    </section>
       
     </div>
   )

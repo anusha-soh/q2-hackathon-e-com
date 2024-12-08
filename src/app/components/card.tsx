@@ -1,8 +1,6 @@
-import { interRegular } from '@/app/fonts/fonts';
 import { interBold } from '@/app/fonts/fonts';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart } from 'lucide-react';
-import Image from 'next/image';
 
 interface Card {
     title: string;
