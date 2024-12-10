@@ -12,14 +12,14 @@ function Hero() {
     <section className={`${interRegular.className} text-[#272343] max-w-[1321px] mx-auto`}>
       
        {/* Banner  */}
-       <div className='flex flex-col sm:flex-row space-y-14 my-7 px-7 justify-center space-x-28 items-center bg-[#F0F2F3 w-full h-[850px]'>
-        <div className='flex flex-col space-y-9 w-[557px] h-[337px]'>
-          <h3 className={`${interBolder.className} font-bold text-[60px] leading-none`}>Best Furniture Collection For Your Interior.</h3>
+       <div className='flex flex-col sm:flex-row flex-wrap space-y-14 lg:my-7 px-7 justify-center space-x-28 items-center bg-[#F0F2F3 w-full max-h-[850px]'>
+        <div className='flex flex-col space-y-9 max-w-[557px] h-[337px]'>
+          <h3 className={`${interBolder.className} font-bold  text-[45px] md:text-[60px] leading-none`}>Best Furniture Collection For Your Interior.</h3>
           <Button className='w-[171px] border-none h-[52px] bg-[#029FAE] text-white hover:bg-[#007580] '>Shop Now <ArrowRight size={24}></ArrowRight></Button>
         </div>
 
         {/* BANNER IMG */}
-        <div>
+        <div className='hidden sm:block'>
         <Image 
         src="/imgs/main.png" 
         alt="Example Image"
@@ -85,7 +85,16 @@ function Hero() {
        {/* Related PRODUCT */}
     <div>
     <h3 className={`${interBold.className} text-[32px] p-7`}>Featured Products</h3>
-    <section className='flex items-center space-y-6 justify-evenly flex-wrap w-full h-[139px]'>
+    <section className='flex items-center space-y-6 justify-evenly flex-wrap w-full'>
+    <Card imageUrl="/imgs/image.png" title='Library Stool Chair' price='20' ></Card>
+    <Card imageUrl="/imgs/image1.png" title='Library Stool Chair' price='20' ></Card>
+    <Card imageUrl="/imgs/image4.png" title='Library Stool Chair' price='20' ></Card>
+    </section>
+    </div>
+
+    <div>
+    <h3 className={`${interBold.className} text-[32px] p-7`}>Featured Products</h3>
+    <section className='flex items-center space-y-6 justify-evenly flex-wrap w-full'>
     <Card imageUrl="/imgs/image.png" title='Library Stool Chair' price='20' ></Card>
     <Card imageUrl="/imgs/image1.png" title='Library Stool Chair' price='20' ></Card>
     <Card imageUrl="/imgs/image4.png" title='Library Stool Chair' price='20' ></Card>
